@@ -1,0 +1,247 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: century;
+}
+
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(./image/vacance.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo a{
+    color: #fff;
+    padding: 0px 20px;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 900;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.logo span{
+    color:rgb(255, 56, 11);
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+ul{
+    list-style: none;
+    float: right;
+    display: flex;
+    margin-top: 20px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    margin: 10px;
+    font-weight: 500;
+    transition: 0.6s ease;
+}
+
+ul li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+ul li.active a{
+    background-color: #fff;
+    color: #000;
+}
+
+.principale{
+    max-width: 114rem;
+    margin: 0 auto;
+}
+
+.titre {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.titre h1{
+    color: #fff;
+    font-size: 70px;
+}
+
+.bouton{
+     position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.bouton a{
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+}
+
+.btn{
+    transition: 0.6s ease;
+}
+
+.btn:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+/*responsivité */
+
+.container {
+  width: min(100% - 32px, 1200px);
+  margin: auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+/* Mobile */
+.section {
+  padding: 24px 16px;
+}
+
+/* Tablette et ordinateur */
+@media (min-width: 768px) {
+  .section {
+    padding: 64px 40px;
+  }
+}
+
+/* 
+   RESPONSIVE : téléphone et tablette */
+
+@media (max-width: 768px) {
+
+    /* Le header garde la hauteur de l'écran mobile */
+    header {
+        min-height: 100svh;
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    /* Le bloc logo + menu devient vertical */
+    .principale {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 75px;
+    }
+
+    /* Le logo reste visible en haut à gauche */
+    .logo a {
+        font-size: 0.9rem;
+    }
+
+    /* Le menu passe sous le logo et les liens vont à la ligne */
+    ul {
+        float: none;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        padding: 0 10px;
+    }
+
+    /* Réduit l'espace et la taille des liens du menu */
+    ul li a {
+        display: block;
+        margin: 5px;
+        padding: 8px 10px;
+        font-size: 0.75rem;
+    }
+
+    /* Le titre est plus petit sur téléphone */
+    .titre {
+        width: 100%;
+        top: 50%;
+        text-align: center;
+    }
+
+    /* Important : .titre h1 est plus précis que h1 seul */
+    .titre h1 {
+        padding: 0 15px;
+        font-size: clamp(2rem, 9vw, 3.5rem);
+        line-height: 1.2;
+    }
+
+    /* Les deux boutons restent centrés et passent à la ligne si nécessaire */
+    .bouton {
+        width: 100%;
+        top: 65%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        text-align: center;
+    }
+
+    .bouton a {
+        padding: 10px 15px;
+        font-size: 0.8rem;
+    }
+}
+
+/* 
+   PETITS TÉLÉPHONES   */
+@media (max-width: 400px) {
+
+    /* Liens plus compacts pour éviter qu'ils dépassent */
+    ul li a {
+        padding: 7px 8px;
+        font-size: 0.68rem;
+    }
+
+    /* Titre légèrement réduit */
+    .titre h1 {
+        font-size: 1.9rem;
+    }
+
+    /* Boutons l'un sous l'autre */
+    .bouton {
+        top: 68%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bouton a {
+        width: 150px;
+    }
+}
