@@ -122,6 +122,22 @@ img {
   gap: 20px;
 }
 
+
+/****************************************************************************************************************/
+
+@media (max-width: 1230px) {
+   .titre h1 {
+    color: #fff;
+    font-size: 50px;
+}
+@media (max-width: 850px) {
+   .titre h1 {
+    color: #ede6ea;
+    font-size: 40px;
+}
+
+  }
+
 @media (max-width: 768px) {
   .menu {
     flex-direction: column;
@@ -243,5 +259,98 @@ img {
 
     .bouton a {
         width: 150px;
+    }
+}
+}
+/*.............................................*/
+/* ========================= */
+/* MENU BURGER */
+/* ========================= */
+
+#check{
+    display: none;
+}
+
+.burger{
+    display: none;
+    font-size: 35px;
+    color: rgb(227, 40, 40);
+    cursor: pointer;
+    z-index: 1000;
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media (max-width:768px){
+
+    .principale{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        position: relative;
+    }
+
+    /* Le logo reste à gauche */
+    .logo{
+        flex: 1;
+    }
+
+    /* Le burger est à droite */
+    .burger{
+        display: block;
+        margin-left: auto;
+    }
+
+    /* Menu déroulant */
+    ul{
+        position: absolute;
+        top: 70px;
+        right: 20px;      /* Affiché à droite */
+        left: auto;       /* Annule le left:0 */
+        width: 220px;
+        background: rgba(0,0,0,0.95);
+        border-radius: 10px;
+
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    /* Affiche le menu */
+    #check:checked ~ ul{
+        display: flex;
+    }
+
+    ul li{
+        width: 100%;
+        text-align: center;
+        margin: 8px 0;
+    }
+
+    ul li a{
+        display: block;
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .titre{
+        width: 100%;
+        text-align: center;
+    }
+
+    .titre h1{
+        font-size: 40px;
+    }
+
+    .bouton{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
     }
 }
