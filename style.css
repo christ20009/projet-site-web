@@ -169,6 +169,8 @@ ul li.active a{
 
     font-size:70px;
 
+    margin-bottom: 200px; /* Espace en bas */
+
 }
 
 
@@ -205,6 +207,8 @@ ul li.active a{
     border:1px solid white;
 
     padding:10px 20px;
+
+    margin-bottom: 5px; /* Espace en bas */
 
 }
 
