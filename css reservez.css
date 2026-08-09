@@ -570,7 +570,6 @@ ul li a{
 }
 
 
-
 /****************************************************************************************************************/
 
 /*  */
@@ -627,300 +626,154 @@ h3:first-of-type {
 }
 
 
-/* CARTES */
-
-
-.cartes {
-
-    width: 60%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    justify-content: space-between;
-    row-gap: 55px;
-
-}
-
-
-/* UNE CARTE */
-
-.carte {
-
-    width: 250px;
-
-    background: white;
-
-    border-radius: 8px;
-
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, .2);
-
-    text-align: center;
-
-    padding-bottom: 20px;
-
-    transition: .4s;
 
 
 
-}
 
-.carte:hover {
+/******************************************************reservation**********************************************************/
 
-    transform: translateY(-8px);
-
-}
-
-
-/* IMAGE */
-
-
-.carte img {
-
-    width: 100%;
-
-    height: 180px;
-
-    object-fit: cover;
-
-    border-radius: 8px 8px 0 0;
-
-}
-
-
-/* TITRE DE LA CARTE */
-
-
-.carte h3 {
-
-    margin-top: 20px;
-
-    color: #003366;
-
-    font-size: 24px;
-
-}
-
-
-/* TEXTE */
-
-
-.carte p {
-
-    padding: 15px;
-
-    line-height: 20px;
-
-    color: #555;
-
+.reservation{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    margin-top:-6px;
+    margin: 80px auto;
+    margin-left:calc(-50vw + 50%);
+    
 }
 
 
 
-.cartesF {
-    width: 90%;
-    margin: 50px auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+
+.reservation-form{
+
+    width:90%;
+    max-width:1200px;
+
+    background:#fff;
+
+    padding:30px;
+
+    border-radius:30px;
+ 
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+    box-shadow:0 40px 20px rgba(0,0,0,.15);
+
+    justify-content:center;
 }
 
+.reservation-form select,
+.reservation-form input{
 
+    height:55px;
 
-.carte {
-    width: 100%;
-    max-width: 300px;
-    margin: auto;
-    background: white;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, .2);
-    border-radius: 8px;
-    text-align: center;
+    border:none;
+
+    background:#f2f2f2;
+
+    border-radius:8px;
+
+    padding:0 15px;
+
+    font-size:16px;
+
+    flex:1;
+    min-width:180px;
 }
 
-.carte img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-}
-
-@media (max-width:700px) {
-
-    .cartes {
-        grid-template-columns: 1fr;
-    }
-
-}
-
-
-/*.......................................................................*/
-
-
-/* SECTION VOYAGE */
-
-.voyage {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    width: 200%;
-    max-width: 1000px;
-    margin: 50px auto;
-    margin-top: 300px;
-}
-
-.texte-voyage p {
-    font-size: 20px;
-    /* Réduit la taille du texte */
-    line-height: 1.5;
-    /* Réduit l'espacement entre les lignes */
-    max-width: 1050px;
-    /* Limite la largeur du paragraphe */
-    padding: 2px;
-    /* Ajoute un petit espace intérieur */
-    margin: 20px auto;
-    /* Centre et réduit les marges */
-    text-align: justify;
-    /* Justifie le texte pour un rendu propre */
-    margin-right: 20px
-}
-
-.img-voyage img {
-    margin-left: 40px
-}
-
-.texte-voyage h2 {
-    margin-top: 10px
-}
-
-/* ....................................................................................... */
-
-/* FORMULAIRE */ 
-
-.contact {
-    background: white;
-    padding: 20px 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 500px;
-    margin-top: 100px;
-    margin-left: 510px;
-    border-radius: 9px;
-    font-size: 20px;
-    box-sizing: border-box;
-    transition: border-color 0.3s, box-shadow 0.3s;
-    box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
-}
-
-/* ========================= */
-/* RESPONSIVE FORMULAIRE */
-/* ========================= */
-
-
-/* Ecran moyen (tablette et petit ordinateur) */
-@media(max-width:1200px){
-
-    .contact{
-
-        margin-left:auto;
-        margin-right:auto;
-
-        width:90%;
-        max-width:500px;
-
-    }
-
-}
-
-
-
-/* Tablette */
-@media(max-width:768px){
-
-    .contact{
-
-        margin-left:auto;
-        margin-right:auto;
-
-        width:90%;
-
-        padding:20px;
-
-        font-size:17px;
-
-    }
-
-}
-
-
-
-/* Téléphone */
-@media(max-width:480px){
-
-    .contact{
-
-        width:95%;
-
-        padding:15px;
-
-        font-size:15px;
-
-        margin-top:50px;
-
-    }
-
-
-}
-
-
-/* ....................................................................................... */
-
-/* ========================= */
-/* SECTION VOYAGE */
-/* ========================= */
-
-
-.voyage{
+.checkbox{
 
     display:flex;
 
-    justify-content:space-between;
-
     align-items:center;
 
-    gap:40px;
+    gap:8px;
+
+    font-size:17px;
+}
+
+button{
+
+    width:250px;
+
+    height:60px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#005bea;
+
+    color:#fff;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+button:hover{
+
+    background:#022152;
+}
+
+
+/******************************************************description**********************************************************/
+
+/* ========================= */
+/* PARTIE VISITER */
+/* ========================= */
+
+
+.visiter{
 
     width:90%;
 
-    max-width:1200px;
-
-    margin:auto;
+    margin:80px auto;
 
 }
 
 
-.texte-voyage{
 
-    flex:1;
+.visiter-container{
 
-}
+    display:grid;
 
+    grid-template-columns:1.2fr 1fr;
 
-.img-voyage{
-
-    flex:1;
+    gap:25px;
 
 }
 
 
-.img-voyage img{
+
+/* GRANDE CARTE */
+
+.destination-principale{
+
+    position:relative;
+
+    height:750px;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+}
+
+
+
+.destination-principale img{
 
     width:100%;
 
-    max-width:500px;
-
-    height:auto;
-
-    display:block;
+    height:100%;
 
     object-fit:cover;
 
@@ -928,31 +781,144 @@ h3:first-of-type {
 
 
 
-/* ========================= */
-/* ECRAN MOYEN */
-/* ========================= */
+
+/* PETITES CARTES */
+
+.destination-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:25px;
+
+}
 
 
-@media(max-width:1200px){
+
+.destination-card{
+
+    position:relative;
+
+    height:360px;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+}
 
 
-    .voyage{
 
-        gap:30px;
+.destination-card img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+
+
+
+
+
+/* ASSOMBRIR IMAGE */
+
+.overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,0.35);
+
+}
+
+
+
+
+
+
+/* NOM DES VILLES */
+
+
+.destination-principale h2,
+.destination-card h2{
+
+    position:absolute;
+
+    top:25px;
+
+    right:25px;
+
+    color:white;
+
+    font-size:35px;
+
+    font-weight:900;
+
+    z-index:2;
+
+}
+
+
+
+
+
+
+/* BOUTON */
+
+.destination-principale a,
+.destination-card a{
+
+    position:absolute;
+
+    bottom:25px;
+
+    right:25px;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:18px;
+
+    z-index:2;
+
+    transition:.3s;
+
+}
+
+
+.destination-principale a:hover,
+.destination-card a:hover{
+
+    color:#00aaff;
+
+}
+
+
+
+
+/* RESPONSIVE */
+
+
+@media(max-width:1000px){
+
+
+    .visiter-container{
+
+        grid-template-columns:1fr;
 
     }
 
 
-    .texte-voyage h2{
+    .destination-principale{
 
-        font-size:32px;
-
-    }
-
-
-    .texte-voyage p{
-
-        font-size:18px;
+        height:500px;
 
     }
 
@@ -961,383 +927,50 @@ h3:first-of-type {
 
 
 
-/* ========================= */
-/* TABLETTE */
-/* ========================= */
+@media(max-width:650px){
 
 
-@media(max-width:992px){
+    .destination-grid{
 
-
-    .voyage{
-
-        gap:20px;
-
-        width:95%;
+        grid-template-columns:1fr;
 
     }
 
 
-    .texte-voyage h2{
+    .destination-card{
 
-        font-size:28px;
-
-    }
-
-
-    .texte-voyage p{
-
-        font-size:16px;
-        
+        height:300px;
 
     }
 
 
-    .img-voyage img{
+    .destination-principale h2,
+    .destination-card h2{
 
-        max-width:400px;
-
-    }
-
-
-}
-
-
-
-/* ========================= */
-/* TELEPHONE */
-/* ========================= */
-
-
-@media(max-width:600px){
-
-
-    .voyage{
-
-        display:flex;
-
-        flex-direction:column;
-
-        align-items:center;
-
-        gap:20px;
-
-        width:100%;
+        font-size:25px;
 
     }
 
 
-    .texte-voyage{
-
-        width:90%;
-
-        text-align:center;
-
-    }
-
-
-    .texte-voyage h2{
-
-        font-size:22px;
-
-    }
-
-
-    .texte-voyage p{
-
-        font-size:14px;
-
-        text-align:justify;
-
-    }
-
-
-    .img-voyage{
-
-        width:90%;
-
-        display:flex;
-
-        justify-content:center;
-
-    }
-
-
-    .img-voyage img{
-
-        width:100%;
-
-        max-width:3500px;
-
-        height:auto;
-
-        margin-left: 10px;
-
-    }
-
-
-}
-
-.voyageTITRE {
-    text-align: center;
-    color: #010e60;
-    font-size: 30px;
-    margin-top: 100px;
-    position: relative;
-    top: 0; /* enlève le déplacement */
 }
 
 
 /****************************************************************************************************************/
 
-
-
-/* ========================= */
-/* FOOTER */
-/* ========================= */
-
-footer {
-    width: 100%;
-    background: #fff;
-    border-top: 2px solid #d9d9d9;
-    padding: 60px 20px;
-
-}
-
-.footer-container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 50px;
-    flex-wrap: wrap;
-}
-
-.footer-logo {
-    flex: 1;
-    text-align: center;
-}
-
-.footer-logo img {
-    width: 220px;
-    max-width: 100%;
-    height: auto;
-    border-radius: 50%;
-}
-
-.footer-menu {
-    flex: 2;
-    display: flex;
-    justify-content: center;
-    gap: 70px;
-    flex-wrap: wrap;
-}
-
-.footer-menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.footer-menu a {
-    text-decoration: none;
-    color: #222;
-    font-size: 18px;
-    text-transform: uppercase;
-    transition: .3s;
-}
-
-.footer-menu a:hover {
-    color: #0077cc;
-}
-
-/* ========================= */
-/* RESPONSIVE FOOTER */
-/* ========================= */
-
-
-/* Ordinateur portable */
-@media(max-width:1000px){
-
-    .footer-container{
-
-        gap:30px;
-
-    }
-
-
-    .footer-logo img{
-
-        width:180px;
-
-    }
-
-
-    .footer-menu{
-
-        gap:40px;
-
-    }
-
-
-    .footer-menu ul{
-
-        padding-top:0;
-        justify-content:flex-start;
-
-    }
-
-}
-
-
-
-/* Tablette */
-@media(max-width:768px){
-
-
-    .footer-container{
-
-        flex-direction:column;
-
-        justify-content:center;
-
-        align-items:center;
-
-        text-align:center;
-
-        width:90%;
-
-        gap:40px;
-
-    }
-
-
-
-    .footer-logo{
-
-        width:100%;
-
-    }
-
-
-
-    .footer-logo img{
-
-        width:160px;
-
-    }
-
-
-
-    .footer-menu{
-
-        width:100%;
-
-        flex-direction:column;
-
-        justify-content:center;
-
-        align-items:center;
-
-        gap:25px;
-
-    }
-
-
-
-    .footer-menu ul{
-
-        width:100%;
-
-        display:flex;
-
-        flex-direction:column;
-
-        align-items:center;
-
-        justify-content:center;
-
-        padding:0;
-
-        margin:0;
-
-        gap:12px;
-
-    }
-
-
-
-    .footer-menu a{
-
-        font-size:16px;
-
-    }
-
-
-}
-
-
-
-/* Téléphone */
-@media(max-width:480px){
-
-
-    footer{
-
-        padding:40px 10px;
-
-    }
-
-
-
-    .footer-container{
-
-        width:100%;
-
-    }
-
-
-
-    .footer-logo img{
-
-        width:130px;
-
-    }
-
-
-
-    .footer-menu{
-
-        gap:20px;
-
-    }
-
-
-
-    .footer-menu a{
-
-        font-size:14px;
-
-    }
-
-
-
-}
-
-/* ========================= */
 /* FOOTER  */
 /* ========================= */
 
 
+
 footer{
-    width:100%;
+    width:100vw;
     overflow:hidden;
+    background:white;
+     
+    margin-left:calc(-50vw + 50%);
+    
+    padding:60px 0;
+  
 }
 
 
@@ -1596,3 +1229,7 @@ footer{
 
 
 }
+
+
+
+
